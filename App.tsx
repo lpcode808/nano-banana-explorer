@@ -39,23 +39,13 @@ const App: React.FC = () => {
     <div className="min-h-screen bg-navy-900 text-white font-sans selection:bg-orange selection:text-white pb-20">
       {/* Header */}
       <header className="border-b border-navy-700 bg-navy-900/80 backdrop-blur-md sticky top-0 z-10">
-        <div className="max-w-5xl mx-auto px-6 py-3 flex items-center justify-between gap-4">
-          <div className="flex items-center gap-2 shrink-0">
+        <div className="max-w-5xl mx-auto px-6 h-16 flex items-center justify-between">
+          <div className="flex items-center gap-2">
             <span className="text-2xl">🍌</span>
             <h1 className="font-serif font-bold text-xl tracking-tight">Nano Banana Architect</h1>
           </div>
-          <div className="flex items-center gap-4">
-            <a
-              href="https://acaiberry.substack.com/p/google-gemini-creates-informative"
-              target="_blank"
-              rel="noreferrer"
-              className="text-orange hover:text-orange-hover hover:underline text-xs font-mono transition-colors hidden md:block"
-            >
-              📖 Read the article
-            </a>
-            <div className="text-xs font-mono text-gray-400 hidden sm:block">
-              Era 3 Visuals v1.0
-            </div>
+          <div className="text-xs font-mono text-gray-400 hidden sm:block">
+            Era 3 Visuals v1.0
           </div>
         </div>
       </header>
@@ -63,6 +53,19 @@ const App: React.FC = () => {
       <main className="max-w-5xl mx-auto px-6 py-12">
         {!generatedPrompt ? (
           <div className="space-y-12 animate-in fade-in slide-in-from-bottom-4 duration-500">
+            
+            {/* Original Article Link */}
+            <div className="text-center -mb-6">
+              <a 
+                href="https://acaiberry.substack.com/p/google-gemini-creates-informative" 
+                target="_blank" 
+                rel="noreferrer" 
+                className="text-orange hover:text-orange-hover hover:underline text-sm font-mono transition-colors"
+              >
+                Read the original article: https://acaiberry.substack.com/p/google-gemini-creates-informative
+              </a>
+            </div>
+
             {/* Hero Image */}
             <div className="rounded-2xl overflow-hidden shadow-2xl border border-navy-700/50">
               <img 
