@@ -18,3 +18,21 @@ View your app in AI Studio: https://ai.studio/apps/drive/1kOmR9rxyi8CTweV7PenNJX
 2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
 3. Run the app:
    `npm run dev`
+
+## Staging Environment
+
+Want to test changes safely before deploying to production? Set up a staging environment!
+
+**Quick Start:**
+```bash
+./setup-staging.sh
+```
+
+See [QUICK-START-STAGING.md](QUICK-START-STAGING.md) for the 3-step setup guide.
+
+**Daily workflow:**
+- Test changes on staging first
+- Push to production when ready
+- No more deployment scares!
+
+Full documentation: [STAGING-SETUP.md](STAGING-SETUP.md)
